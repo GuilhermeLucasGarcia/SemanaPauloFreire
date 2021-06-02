@@ -1,0 +1,350 @@
+/* Cores do projeto (use-as como se fossem variaveis) */
+:root{
+    --cor-1-BrancoPuro : #ffffff;
+    --cor-2-CinzaClaro : #6f6f6f;
+    --cor-3-RoxoEscuro : #130224;
+    --cor-4-PretoPuro : #000000;
+    --cor-5-RoxoClaro : #8a94da;
+
+    font-size: 60%;
+}
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--cor-1-BrancoPuro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "montserrat";
+
+    overflow-x: hidden;
+}
+
+hr{
+    align-self: center;
+    color: #ffffff;
+    background-color:#ffffff;
+    width: 60%;
+}
+
+::-webkit-scrollbar {
+    Width: 12px;
+    Display: block;
+    background-color: rgba(81, 58, 188,0.35);
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgba(81, 58, 188,0.75);
+
+    border-radius: 5px;
+}
+
+header{
+    margin-bottom: 30px;
+}
+
+/* Barra de navegação */
+nav{
+    background-color: white;
+
+    display:flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: flex-start;
+
+    font-family: "lora";
+    font-weight: 600;
+    font-size: 2.6rem;
+
+    width: 100vw;
+    height: 4vh;
+    min-height: 75px;
+}
+nav a{
+    text-decoration: none;
+    color: var(--cor-4-PretoPuro);
+}
+/* Logo do topo */
+.nav-TopoLogo{
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 20%;
+    height: 100%;
+
+    text-align: left;
+}
+
+.nav-TopoLogo-IconLivro{
+    display: flex;
+    align-items: center;
+    padding-right: 2%;
+
+    height: 100%;
+}
+
+.nav-TopoLogo-IconLivro a{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-TopoLogo-IconLivro img{
+    height: 60%;
+    transform: translateY(-10%);
+}
+
+.nav-TopoLogo-Letreiero a{
+    display: flex;
+    align-items: center;
+
+    height: 100%;
+
+    transition: 0.2s;
+}
+.nav-TopoLogo-Letreiero a:hover{
+    font-size: 110%;
+    color: #8a94da;
+}
+
+
+/* Nav */
+.nav-BarraDeNavegacao{
+    
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    transform: translate(38%);
+    list-style: none;
+
+    /* regras descartadas */
+
+    /* justify-content: right; */
+    /* float: right; */
+    /* right: -15%; */
+}
+
+.nav-BarraDeNavegacao li{
+    display: flex;
+
+    display: inline-block;
+    margin-right: 2%;
+    font-size: 65%;
+    text-transform: uppercase;
+}
+.nav-BarraDeNavegacao li a{
+    text-decoration: none;
+    color: var(--cor-4-PretoPuro);
+}
+
+.nav-BarraDeNavegacao li a:hover{
+    color: var(--cor-5-RoxoClaro);
+    border-bottom: 2px solid var(--cor-5-RoxoClaro);
+    padding-bottom: 4px;
+    transition: 0.2s;
+}
+/* Footer */
+/* Footer */
+/* Containers dos footers */
+.pai-footer{
+
+    background: #0896ac;
+    background: -moz-linear-gradient(-45deg,  #0896ac 0%, #513abc 100%); 
+    background: -webkit-linear-gradient(-45deg,  #0896ac 0%,#513abc 100%); 
+    background: linear-gradient(135deg,  #0896ac 0%,#513abc 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0896ac', endColorstr='#513abc',GradientType=1 );  
+    
+    display: grid;
+    grid-template-rows: 1fr 4fr 1fr ;
+    
+    color: var(--cor-1-BrancoPuro) ;
+    font-size: 1.6rem;
+    
+    align-items: end;
+    justify-content: center;
+}
+
+/* main do footer */
+.footer-header-quemSomosNos{
+    margin-top: 50px;
+    margin-bottom: 0px;
+    text-align: center;  
+    min-height: 100px;
+    width: 100%;
+}
+
+.footer-container-equipes{
+    height: 60vh;
+    min-height: 500px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+}
+.footer-section-Equipe{
+    justify-items: center;
+    height: 500px;
+    width: 20%;
+    margin-right: 5%;
+    border-right: white solid 1px;
+
+    min-width: 280px;
+
+    transform: translateX(35%);
+}
+
+.footer-section-Equipe:last-child{
+    border-right: none;
+}
+
+.footer-section-Equipe ul{
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Cards do footer */
+.Footer-Design-Item{
+
+    display: flex;
+    align-items: center;
+    
+    width: 243px;
+    height: 75px;
+    
+    padding: 2%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+
+    background-color: #444444;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0,0.25);
+    transition: 0.2s;
+}
+
+.Footer-Design-Item:hover{
+    transform:scale(1.12);
+    background-color: #1b1b1b;
+    border: 1.5px solid #E9E9E9;
+    box-shadow: 2px 4px 25px rgba(0, 0, 0,0.35);
+}
+/* Imagem pessoal */
+.Footer-Design-Item .Design-Item-Img{
+    height: 63px;
+    width: 87px;
+    
+    border-radius: 15px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.60);
+}
+.Footer-Design-Item .Design-Item-Img img{
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+}
+
+.Footer-Design-NomeIcon{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+/* Nome da pessoa */
+.Footer-Design-NomeIcon span{
+    font-family: "lora";
+    text-align: left;
+    transform: translateX(5%);
+    width: 100%;
+    height: 50%;
+    font-size: 2.5rem;
+    /* Impede que o texto e o conteudo seja selecionado */
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    user-select: none;
+}
+/* Icones de redes sociais */
+.Footer-Design-NomeIcon-Icon{
+    display: flex;
+    height: 45%;
+    width: 100%;
+    justify-content: flex-end;
+}
+.Footer-Design-NomeIcon-Icon img{
+    transform: translate(0%, 55%);
+    height: 19px;
+    width: 19px;
+    margin-left: 8px;
+
+    
+}
+
+.footer-copyright{
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+
+    height: 60px;
+    width: 100vw;
+    background-color: #1c1c22;
+}
+.footer-copyright *{
+    background-color: #1c1c22;
+}
+
+.footer-copyright span{
+    align-self: center;
+    padding-left: 200px;
+}
+.footer-copyright .footer-icones{
+    display: flex;
+    justify-content: space-around;
+    align-items: center ;
+    justify-self: center;
+    width: 20%;
+    height: 100%;
+    display: flex;
+}
+.footer-icones a{
+    height: 40%;
+    min-width: 50px;
+}
+.footer-icones img{
+    height: 100%;
+    max-height: 50px ;
+}
+
+@media(max-width :1800px){
+    .nav-BarraDeNavegacao {
+        transform: translate(20%);
+    }
+}
+
+@media(max-width:1280px){
+    nav{
+        font-size: 2rem;
+    
+        width: 100vw;
+        height: 4vh;
+        min-height: 70px;
+    }
+    .footer-section-equipe{
+        width: 25%;
+        transform: translateX(15%);
+    }
+}
+@media(max-width : 1000px){
+    .nav-BarraDeNavegacao{
+        transform: translateX(5%)
+    }
+}
+
+
+

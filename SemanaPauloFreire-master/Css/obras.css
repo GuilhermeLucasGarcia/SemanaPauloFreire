@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+:root{
+    --Branco : #ffffff;
+
+}
+.classe-master{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height:100% ;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{  
+    background-size: cover;    
+    background: rgb(8,150,172);
+    background: linear-gradient(90deg, rgba(8,150,172,1) -45%, rgba(81,58,188,1) 100%);    
+}
+.pai-footer{
+    background: none !important; 
+}
+
+.Main-Instituto{
+    padding: 5%;
+}
+
+/* Card Obras */
+
+.card-texto-Obras{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    font-size: 4.5rem;
+
+    height: 100px;
+    width: 400px;
+    border-radius: 60px;
+
+    padding: 6px;
+    margin-bottom: 50px;
+    transition: 0.2s;
+}
+.card-texto-Obras:hover{
+    /* height: 110px; */
+    /* font-size: 4.9rem; */
+    transform: scale(1.1)
+}
+
+.card-texto-Obras img{
+    height: 95%;
+    justify-self: left;
+}
+
+.card-texto-Obras span{
+    color: #053D57;
+
+    width: 60%;
+
+    border-bottom: 5px solid #053D57;
+
+    font-weight: 800;
+
+    margin-left: 3%;
+}
+
+/* Espaçamento das Tabelas */
+.tabela-livros{
+    background-color: rgb(51, 51, 51);
+
+    border-radius: 10px;
+
+    font-size: 30px;
+    padding: 5%;
+    text-align: left;
+
+    transition: 0.9s;
+
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.tabela-livros:hover{
+    transform: scale(105%);
+}
+/* Listagem dos livros */
+.tabela-livros ul{
+    font-size: 20px;
+    color: white;
+    width: 100%;
+    list-style: none;
+    padding: 3%;
+}
+
+.tabela-descricao-livros  .tabela-texto{
+    font-size: 25px;
+    margin-bottom: 60px;
+}
+    
+.tabela-3{
+    font-size: 25px;
+    right: 10px;
+    margin: 20px 20px 0px 20px;
+}
+
+/* Formatação de Texto */
+.tabela-descricao-livros{
+    padding: 2% 5% 0% 0%;
+
+    margin: 20px 0px 0px 20px;
+    color: var(--Branco);
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* CSS Grid */
+.container{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 20px;
+}
+
+
+
+
+
+
+
+
+
+

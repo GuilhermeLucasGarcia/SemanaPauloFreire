@@ -1,0 +1,98 @@
+/* Organização do banner inicial */
+.containerPai-Bibliografia{
+    width:100%;
+    max-width: 1080px;
+}
+
+.header-banner{
+    width: 100vw;
+}
+.header-banner img{
+    width: 100%;
+
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Texto principal */
+.main-principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Texto 1 */
+#organiza-texto1{
+    min-height:550px;
+    width: 100%;
+
+    padding-right: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 10vh;
+    margin-bottom: 20vh;
+}
+
+.section-texto1{
+
+    min-height:550px ;
+    max-height: 600px;
+    height: 50vh;
+    width: 60%;
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    align-items: right;
+    
+    justify-content: center;
+    max-width: 1000px;
+
+    font-size: 3.6rem;
+    flex: 1;
+}
+.section-texto1-texto{
+    transform: translateY(-20%)
+}
+
+.section-texto1-texto h1{
+    margin-bottom: 60px;
+}
+
+.img-texto1{
+    display: flex;
+    flex-direction: row;
+    
+    width: 100%;
+    flex: 20%;
+}
+
+    /* Imagem do texto 1 */
+.img-texto1 img{
+    width: 25%;
+    transform: translate(380%, 10%);
+}
+
+.p-referencia {
+    font-size: 50%;
+    padding-top: 2%;
+    padding-left: 35%;
+
+    font-style: italic;
+}
+
+/* Texto 2 */
+#organiza-Texto2{
+    min-height: 600px ;
+    width: 100%;
+}
+#organiza-Texto2 img{
+    width: 100%;
+}
+
+
+
